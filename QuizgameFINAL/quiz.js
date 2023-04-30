@@ -241,7 +241,7 @@ function showwinrate(){
     $("piepercentage").style.display="block"
     $("pie").style.background = `conic-gradient(red ${(wrong_answers/(correct_answers+wrong_answers)*360)}deg, limegreen 0deg)`
     $("piepercentage").innerHTML=`Correct answer: ${Math.ceil(correct_answers/(correct_answers+wrong_answers)*100)}%<br>Wrong answer: ${Math.floor(wrong_answers/(correct_answers+wrong_answers)*100)}%`
-    $("next").onclick = function() { location.replace("titlescreen/titlescreen.html") }
+    $("next").onclick = function() { location.replace("titlescreen/index.html") }
     $("next").style.width="750px"
     $("next").innerHTML="Return to Titlescreen"
 }
