@@ -1,6 +1,6 @@
 soundstatus=false
 darkstatus=false
-let Kahootintro= new Audio("../audios/Kahootintro.mp3")
+let Kahootintro= new Audio("audios/Kahootintro.mp3")
 function $(id){
     return document.getElementById(id)
 }
@@ -63,6 +63,6 @@ function verify(){
         localStorage.setItem("name",$("name").value)
         localStorage.setItem("sound",soundstatus)
         localStorage.setItem("dark",darkstatus)
-        window.open(`../quiz.html`,"_parent");
+        window.open(`quiz.html`,"_parent");
     }
 }
